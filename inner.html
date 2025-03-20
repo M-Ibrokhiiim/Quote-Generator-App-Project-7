@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/pics/domainIcon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./main.css">
     <title>Quote Generator</title>
 </head>
@@ -14,18 +15,18 @@
         </section>
 
         <section class="quote-section">
-            <blockquote class="quote-section-quotePlace">"We read the world and say that it deceives us."</blockquote>
+            <blockquote class="quote-section-quotePlace" id="quote">"We read the world and say that it deceives us."</blockquote>
             <div>
               <div> 
                 <p class="quote-section-hl"></p>
-                <p class="quote-section-author">Radindranath Tagore</p>
+                <p class="quote-section-author" id="quoteAuthor">Radindranath Tagore</p>
               </div>
             </div>  
         </section>
 
         <section class="buttons-section">
-            <button class="buttons-section-quoteBtn">New quote</button>
-            <button class="buttons-section-tweetBtn"><img src="./src/pics/Tweet.jpg"  width="100" height="20" ><p>Tweet</p></button>
+            <button class="buttons-section-quoteBtn" onclick="quotesFunction()">New quote</button>
+            <button class="buttons-section-tweetBtn" onclick="tweetFunction()"><img src="./src/pics/Tweet.jpg"  width="100" height="20" ><a>Tweet</a></button>
         </section>
     </main>
 
